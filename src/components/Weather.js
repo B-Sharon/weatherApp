@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"; // Importing necessary hooks from React
 import Search from "./Search"; // Importing the Search component
 import Alerts from "./Alerts";
-
+import SaveNation from "./SaveLocation";
 function Weather() {
     const [search, setSearch] = useState(''); // State to manage the search query
     const [loading, setLoading] = useState(false); // State to manage loading status
@@ -110,6 +110,7 @@ function Weather() {
                 setSearch={setSearch}
                 handleSearch={handleSearch}
             />
+            <SaveNation weatherData={weatherData}/>
             {loading ? <div className="loading">Loading...</div> :
                 error ? <div className="error">{error}</div> :
                     weatherData &&
@@ -166,24 +167,36 @@ function Weather() {
                                     <p>Humidity</p>
                                 </div>
                             </div>
+                            <div className="column">
+                                <div>
+                                    <p className="pressure">{weatherData.main.pressure} hPa</p>
+                                    <p>Pressure</p>
+                                </div>
+                            </div>
+                            <div className="column">
+                            <   div>
+                                    <p className="visibility">
+                                    {weatherData.visibility ? `${weatherData.visibility} meters` : 'N/A'}</p>
+                                    <p>Visibility</p>
+                                </div>
+                            </div>
+                            <div className="column">
+                                <div>
+                                    <p className="sunrise">{weatherData.sys.sunrise ? new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString() : 'N/A'}</p>
+                                    <p>Sunrise</p>
+                                </div>
+                            </div>
+                            <div className="column">
+                                <div>
+                                    <p className="sunset">{weatherData.sys.sunset ? new Date(weatherData.sys.sunset * 1000).toLocaleTimeString() : 'N/A'}</p>
+                                    <p>Sunset</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
             }
-            {forecastData && (
-                <div className="forecast">
-                    <h3>Forecast</h3>
-                    <div className="forecast-items">
-                        {forecastData.list.map((item, index) => (
-                            <div key={index} className="forecast-item">
-                                <div>{new Date(item.dt * 1000).toLocaleDateString()}</div>
-                                <div>Temperature: {convertTemperature(item.main.temp)}°</div>
-                                <img src={getWeatherIconUrl(item.weather[0].icon)} alt="Weather Icon" />
-                                <div>{item.weather[0].description}</div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            )}
+           
         </div>
     );
 }
