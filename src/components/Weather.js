@@ -118,7 +118,7 @@ function Weather() {
                         <Alerts // Highlight: Integrate the Alerts component
                             location={weatherData.name}
                             temperature={convertTemperature(weatherData.main.temp)}
-                            normalTemperature={25} // Assume normal temperature to be 25°C
+                            normalTemperature={unit === 'metric' ? 25 : (25 * 9 / 5) + 32} // Update normalTemperature based on selected unit
                         />
                         <div className="city-name">
                             <h2>{weatherData.name}, <span>{weatherData.sys.country}</span></h2>
@@ -196,7 +196,7 @@ function Weather() {
                         </div>
                     </div>
             }
-           
+
         </div>
     );
 }

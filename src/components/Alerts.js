@@ -7,9 +7,13 @@ function Alerts({ location, temperature, normalTemperature }) {
     <div>
       {isAboveNormal && (
         <div className="alert">
-          <p>Warning: Temperature in {location} is above normal!</p>
-          <p>Current temperature: {temperature}°C</p>
-          <p>Normal temperature: {normalTemperature}°C</p>
+           <p>
+            Warning: Temperature in {location} is above normal! Current
+            temperature: {temperature}°
+          </p>
+          <p>
+            Normal temperature: {normalTemperature}°
+          </p>
         </div>
       )}
     </div>
