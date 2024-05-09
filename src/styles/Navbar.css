@@ -15,7 +15,8 @@
   margin-bottom: 20px;
 }
 
-.nav-title, .nav-title h1 {
+.nav-title,
+.nav-title h1 {
   flex: auto;
   text-align: center;
   color: #f3f4f5;
@@ -30,7 +31,11 @@
   display: flex;
   flex: 1;
   gap: 20px;
-  text-align: center;
+  justify-content: center; /* Center the links horizontally */
+}
+
+.navbar li:hover {
+  color: rgb(100, 67, 192); /* Change color on hover */
 }
 
 .navlink {
@@ -41,7 +46,7 @@
 }
 
 .navlink:hover {
-  color: rgb(100, 67, 192);
+  color: rgb(100, 67, 192); /* Change color on hover */
 }
 
 .navlink:active {

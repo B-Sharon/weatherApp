@@ -1,35 +1,29 @@
 .categoriesOfPlaces {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .categoriesOfPlaces li {
-    flex: 0 0 25%;
-    padding: 1rem;
-    margin: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: rgba(65, 65, 65, 0.308) ;
-  }
-  
-  .categoriesOfPlaces h2 {
-    padding-top: 40px;
-    margin-top: 20px;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .categoriesOfPlaces ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  
-  /* Styling for the PlaceCategory component (replace with your specific styles) */
-  .PlaceCategory {
-    /* Add styles for individual place and weather information */
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.categoriesOfPlaces li {
+  flex: 1 1 30%; /* Adjust width as per your design */
+  margin: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: rgba(65, 65, 65, 0.308);
+}
+
+.categoriesOfPlaces h1 {
+  padding-top: 60px;
+  margin-top: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.categoriesOfPlaces ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
