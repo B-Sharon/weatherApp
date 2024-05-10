@@ -5,8 +5,9 @@
 #### By *Sharon Byegon, Levis Rabah, Ephy Wachira, Maria Kamau, Jonah Mwangala*
 
 ## Overview
-Welcome to this weather app. A user-friendly weather app that provides everything you need. Get real-time updates, hyper-local forecasts, air quality data, personalized alerts, and seamless location management. <br>
-Our app empowers you to make informed decisions for every adventure and prioritize your well-being.
+In this project we created a user-friendly weather app that provides everything you need from real-time updates, hyper-local forecasts, air quality data, viewing and managing saved locations, personalized alerts, to seamless location management. <br>
+
+Our app empowers you to make informed decisions for every day living, going on adventures and prioritize your well-being.
 
 ![awe weather](https://github.com/B-Sharon/weatherApp/blob/main/demo.png)
 
@@ -16,14 +17,17 @@ Our app empowers you to make informed decisions for every adventure and prioriti
 3. **Current Weather Display:** The app displays the current weather conditions, including temperature, wind speed, humidity, and a brief description of the weather.
 4. **Temperature Unit Selector:** Users can toggle between Celsius and Fahrenheit units to view temperature according to their preference.
 5. **Forecast Display:** The app also provides a forecast for the upcoming days, showing the expected weather conditions and temperatures.
-6. **Air Pollution Index (API) Feature:** Provides users with a numerical representation of air quality based on the concentration of various pollutants in the air. Users can monitor the API to make informed decisions about outdoor activities and take precautions to protect their health.
+6. **Air Quality Index (AQI) Feature:** Provides users with a numerical representation of air quality based on the concentration of various pollutants in the air, the AQI categorizes air quality into levels ranging from "Good" to "Hazardous". Based on the category the air quality falls under users are able to make informed decisions about outdoor activities and take precautions to protect their health.
 7. **Error Handling:** If there are any errors during the weather data retrieval process, the app gracefully handles them and notifies the user.
+8. **Saved Locations:** Provides users with a convenient way to manage and view their saved locations along with the relevant information.
+
 
 ## How to Use
 1. **Search:** Enter the name of a city or location in the search bar and press enter or click the search button.
 2. **View Weather:** Once the search is complete, the app will display the current weather information and forecast for the specified location.
 3. **Toggle Temperature Units:** Use the radio buttons to switch between Celsius and Fahrenheit units for temperature display.
-4. **Monitor Air Quality:** Check the Air Pollution Index (API) feature to gauge the air quality in your area. The API is displayed on a scale ranging from 0 to 500, with corresponding air quality categories. Take necessary precautions based on the current API level to protect your health and well-being.
+4. **Monitor Air Quality:** Search the city to find its Air Quality Index (AQI). Once the search is complete, the concentration of pollutants will be displayed and the AQI categorizes air quality into levels ranging from "Good" to "Hazardous".
+5. **Saved Locations:** On the home page, just below the search bar, there is a drop-down bar giving options for users to categorize the city as either favorites, starred places, want to go, to travel. They can find their selection in the saved locations page.
 
 
 ## Technologies Used
