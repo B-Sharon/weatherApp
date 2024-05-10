@@ -15,12 +15,24 @@
     {
       "id": "be85",
       "name": "Durban"
+    },
+    {
+      "id": "cec5",
+      "name": "Mombasa"
+    },
+    {
+      "id": "5a9e",
+      "name": "Long Island"
     }
   ],
   "ToTravel": [
     {
       "id": "dd43",
       "name": "Sydney"
+    },
+    {
+      "id": "323b",
+      "name": "New York"
     }
   ],
   "autoIncrement": 3
